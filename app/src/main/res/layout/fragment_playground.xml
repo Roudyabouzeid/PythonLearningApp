@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaygroundFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="sans-serif-black"-->
+
+    <!--        android:text="Hasan"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/learntext"/>
+
+    <TextView
+        android:id="@+id/learntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idelogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:text="Learn other useful programing languages "/>
+
+    <ImageView
+
+        android:id="@+id/idelogo"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ide"
+        android:fontFamily="monospace"
+        android:text="Open Development Environment" />
+
+    <TextView
+        android:id="@+id/feedbacktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_flipper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Give us your feedback!"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/feedbacktext">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/star1"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/star2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/star3"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/star4"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/star5"/>
+
+    </RadioGroup>
+
+
+    <ImageView
+        android:id="@+id/star0ImageView"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:alpha="1"
+        android:background="@drawable/star0" />
+
+    <ImageView
+        android:id="@+id/star1ImageView"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:alpha="0"
+        android:background="@drawable/star1" />
+
+    <ImageView
+        android:id="@+id/star2ImageView"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:alpha="0"
+        android:background="@drawable/star2" />
+
+    <ImageView
+        android:id="@+id/star3ImageView"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:alpha="0"
+        android:background="@drawable/star3" />
+
+    <ImageView
+        android:id="@+id/star4ImageView"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:alpha="0"
+        android:background="@drawable/star4" />
+
+    <ImageView
+        android:id="@+id/star5ImageView"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:alpha="0"
+        android:background="@drawable/star5" />
+
+</RelativeLayout>
